@@ -9,9 +9,9 @@ class Produk extends CI_Controller {
         $this->load->model('ModelKategori');
 		$this->load->helper('url_helper');
 		$this->load->model('auth_model');
-		// if(!$this->auth_model->current_user()){
-		// 	redirect('auth/login');
-		// }
+		if(!$this->auth_model->current_user()){
+			redirect('auth/login');
+		}
     }
 	/**
 	 * Index Page for this controller.
@@ -59,5 +59,10 @@ class Produk extends CI_Controller {
 		    $this->ModelProduk->simpanproduk();
             redirect("produk");
 		}
+	}
+
+	public function hapus($id){
+        $this->ModelProduk->hapusProduk($id);
+            redirect("invoice");
 	}
 }

@@ -125,8 +125,8 @@
 							<tr>
 								<td>
 									PTSISFO.<br />
-									12345 Sunny Road<br />
-									Sunnyville, CA 12345
+									Tanjung Barat<br />
+									08960403831238278
 								</td>
 
                                  <?php $query = $this->db->get_where('customer', ['id'=>$invoice['customer_id']]);
@@ -142,13 +142,20 @@
 					</td>
 				</tr>
 
+		<!-- 		<tr class="heading">
+					<td>Payment Method</td>
+
+					<td>Check #</td>
+					<td></td>
+				</tr>
+
 				<tr class="details">
 					<td>Check</td>
 
 					<td>1000</td>
 					<td></td>
 				</tr>
-
+ -->
 				<tr class="heading">
 					<td>Item</td>
 

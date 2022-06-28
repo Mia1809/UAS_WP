@@ -40,6 +40,9 @@
                                     <td>
                                          <?php echo $produk['stok']; ?>   
                                     </td>
+                                    <td>
+                                        <a href="<?= site_url('produk/hapus/' . $produk['id']) ?>" class="btn btn-danger btn-sm item-delete"><i class="fa fa-trash"></i> </a>
+                                    </td>
 							</tr>
 							<?php endforeach; ?>
                         </tbody>

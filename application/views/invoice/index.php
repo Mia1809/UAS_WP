@@ -18,7 +18,8 @@
                             <tr>
                                 <th>Nama</th>
                                 <th>Customer</th>
-                                <th>Nomor Telepon</th>
+                                <th>Tanggal</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,8 +37,10 @@
                                     </td>
 
                                     <td>
+                                         <?php echo $invoice['date']; ?>   
+                                    </td>
+                                    <td>
                                         <a href="<?= site_url('invoice/view/' . $invoice['id']) ?>" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> </a>
-                                        <a href="<?= site_url('invoice/edit/' . $invoice['id']) ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i> </a>
                                         <a href="<?= site_url('invoice/hapus/' . $invoice['id']) ?>" class="btn btn-danger btn-sm item-delete"><i class="fa fa-trash"></i> </a>
                                     </td>
 							</tr>

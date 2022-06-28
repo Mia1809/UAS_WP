@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <h2><?php echo "Buat data siswa"; ?></h2>
+    <h2><?php echo "Buat data invoice"; ?></h2>
 
     <?php echo validation_errors(); ?>
     <?php echo form_open('invoice/create'); ?>
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </div>
-          <button type="submit" class="btn btn-primary">Tambah</button>
+          <button type="submit" class="btn btn-primary">Simpan</button>
 
     </form>
 </div>

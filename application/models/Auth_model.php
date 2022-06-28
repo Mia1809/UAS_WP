@@ -33,13 +33,12 @@ class Auth_model extends CI_Model
 		}
 
 		// cek apakah passwordnya benar?
-		if (!password_verify($password, $user->password)) {
+	
+		if ($password != $user->password) {
 			return FALSE;
 		}
-
 		// bikin session
 		$this->session->set_userdata([self::SESSION_KEY => $user->id]);
-		$this->_update_last_login($user->id);
 
 		return $this->session->has_userdata(self::SESSION_KEY);
 	}

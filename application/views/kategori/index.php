@@ -28,7 +28,7 @@
 							        </td>
 
                                     <td>
-                                        <a href="<?= site_url('kategori/edit/' . $kategori['id']) ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i> </a>
+                                     <!--    <a href="<?= site_url('kategori/edit/' . $kategori['id']) ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i> </a> -->
                                         <a href="<?= site_url('kategori/hapus/' . $kategori['id']) ?>" data="<?= $kategori['nama'] ?>" class="btn btn-danger btn-sm item-delete"><i class="fa fa-trash"></i> </a>
                                     </td>
 							</tr>

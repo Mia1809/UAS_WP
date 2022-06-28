@@ -11,6 +11,10 @@ class Invoice extends CI_Controller {
             $this->load->model('ModelProduk');
 
                 $this->load->helper('url_helper');
+		$this->load->model('auth_model');
+        if(!$this->auth_model->current_user()){
+			redirect('auth/login');
+		}
     }
 	/**
 	 * Index Page for this controller.

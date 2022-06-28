@@ -43,12 +43,11 @@
                             <?php foreach ($invoiceItems as $key => $invoiceItem) : ?>
                             <tr>
                                 <td>
-
-                                         <?php $query = $this->db->get_where('produk', ['id'=>$invoiceItem['produk_id']]);
-                                         $produk = $query->row_array();
-                                         
-                                         echo $produk['nama'];
-                                          ?>
+                                     <?php $query = $this->db->get_where('produk', ['id'=>$invoiceItem['produk_id']]);
+                                     $produk = $query->row_array();
+                                     
+                                     echo $produk['nama'];
+                                      ?>
                                 </td>
                                 <td>
                                     <?= $invoiceItem['quantity'] ?>

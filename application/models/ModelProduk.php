@@ -38,9 +38,9 @@ class ModelProduk extends CI_Model
     {
         $this->db->update('produk', $data, $where);
     }
-    public function hapusProduk($where = null)
+    public function hapusProduk($id)
     {
-        $this->db->delete('produk', $where);
+        $this->db->delete('produk', array("id" => $id));
     }
     public function total($field, $where)
     {
